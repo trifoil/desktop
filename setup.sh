@@ -50,7 +50,9 @@ flatpak install flathub io.github.bytezz.IPLookup -y
 flatpak install flathub net.waterfox.waterfox -y
 flatpak install flathub org.freecad.FreeCAD -y
 flatpak install flathub com.jgraph.drawio.desktop -y
-flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install flathub com.mattjakeman.ExtensionManager -y
+flatpak install flathub org.keepassxc.KeePassXC -y
+
 
 dnf install cockpit -y
 systemctl enable --now cockpit.socket

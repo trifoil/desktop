@@ -1,0 +1,19 @@
+[Icon Theme]
+Name=trifoil-theme
+Comment=Custom GNOME apps icons
+Example=accessories-text-editor
+Inherits=Adwaita
+Directories=scalable/apps,64x64/apps
+
+[scalable/apps]
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=512
+Context=Applications
+
+[64x64/apps]
+Size=64
+Type=Fixed
+Context=Applications
+

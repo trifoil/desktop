@@ -1,6 +1,6 @@
 # Fedora desktop
 
-Fedora desktop setup 
+Fedora 43 desktop setup 
 
 ## Gallery
 
@@ -59,10 +59,35 @@ in the ```~/.bashrc```, add the line ```export GSK_RENDERER=gl```.
 
 ### Extensions
 
-* Blur my shell
-* Caffeine
+* Blur my shell     
+* Caffeine      
 * Dash to Dock
 * Emoji Copy
 * Removable Drive Menu
 * System Monitor
 * User Themes
+
+### Extensions conf
+
+* Blur my shell     
+    ![alt text](image.png)
+    ![alt text](image-1.png)
+    ![alt text](image-2.png)
+    ![alt text](image-3.png)
+    ![alt text](image-4.png)
+    ![alt text](image-5.png)
+* Caffeine      
+    * Default settings
+* Dash to Dock      
+    ![alt text](image-6.png)
+    ![alt text](image-7.png)
+    ![alt text](image-8.png)
+    ![alt text](image-9.png)
+* Emoji Copy        
+    * Default settings
+* Removable Drive Menu      
+    * Default settings
+* System Monitor        
+    * Default settings
+* User Themes       
+    * Default settings

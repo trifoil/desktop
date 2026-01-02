@@ -1,10 +1,14 @@
-# desktop
+# Fedora desktop
 
 Fedora desktop setup 
 
 ## Gallery
 
-![alt text](image.png)
+![alt text](images/image0.png)
+
+![alt text](images/image1.png)
+
+![alt text](images/image2.png)
 
 ## Description
 
@@ -28,8 +32,24 @@ Fedora desktop setup
 * Memory: 31.17 GiB
 * Locale: en_US.UTF-8
 
-
 ## Instructions
+
+### Icons
 
 The icon pack should be placed in ```~/.icons```.
 
+### Intel ARC GPU fix
+
+For the GPU to work correctly without artefacts in Fedora 43 Gnome applications, change the gsk renderer to gl (so that native GTK apps are rendered through gl and not vulkan).
+
+in the ```~/.bashrc```, add the line ```export GSK_RENDERER=gl```.
+
+### Extensions
+
+* Blur my shell
+* Caffeine
+* Dash to Dock
+* Emoji Copy
+* Removable Drive Menu
+* System Monitor
+* User Themes

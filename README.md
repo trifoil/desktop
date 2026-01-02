@@ -12,6 +12,8 @@ Fedora desktop setup
 
 ## Description
 
+### Fastfetch
+
 * OS: Fedora Linux 43 (Workstation Edition) x86_64
 * Host: MS-7E02 (1.0)
 * Kernel: Linux 6.17.12-300.fc43.x86_64
@@ -31,6 +33,17 @@ Fedora desktop setup
 * GPU: Intel Arc B580 @ 2.85 GHz [Discrete]
 * Memory: 31.17 GiB
 * Locale: en_US.UTF-8
+
+### Components
+
+* MSI PRO B760M-P DDR4
+* WD Red SN700 2000GB (112000WD)
+* TEXTORM BM5 240GB (T0910A0)
+* Intel Core i5-14600KF
+* Be quiet! PURE ROCK 3 Black
+* LDLC GT-550P ATX
+* CORSAIR VENGEANCE C70 Gunmetal Black 
+* G.Skill Value 32 Go (4x 8 Go) DDR4 2133 MHz CL15 
 
 ## Instructions
 

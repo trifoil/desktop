@@ -3,22 +3,19 @@
 dnf update -y
 dnf remove firefox gnome-weather gnome-clocks gnome-contacts cheese gnome-tour gnome-music gnome-calendar yelp xsane totem snapshot firefox epiphany libreoffice-impress libreoffice-writer libreoffice-calc -y
 
-dnf install @virtualization -y
-dnf group install --with-optional virtualization -y
-systemctl start libvirtd
-systemctl enable libvirtd
-usermod -a -G libvirt $(whoami)
+# dnf install @virtualization -y
+# dnf group install --with-optional virtualization -y
+# systemctl start libvirtd
+# systemctl enable libvirtd
+# usermod -a -G libvirt $(whoami)
 
-dnf install seahorse -y
 dnf install rustup cargo -y
 dnf install texlive-scheme-full -y
 dnf install libreoffice -y
-dnf install texstudio -y
 dnf install deluge -y
-dnf install inkscape -y
 dnf install blender -y
 dnf install krita -y
-dnf install helvum btop fastfetch conky wine winetricks -y
+dnf install helvum btop fastfetch -y
 dnf install hydrapaper -y
 sudo dnf install gnome-tweaks -y
 
@@ -52,12 +49,9 @@ flatpak install flathub org.freecad.FreeCAD -y
 flatpak install flathub com.jgraph.drawio.desktop -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.keepassxc.KeePassXC -y
+flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
+flatpak install flathub com.heroicgameslauncher.hgl -y
 
-
-dnf install cockpit -y
-systemctl enable --now cockpit.socket
-firewall-cmd --add-service=cockpit
-firewall-cmd --add-service=cockpit --permanent
 
 dnf remove docker \
            docker-client \
@@ -70,11 +64,11 @@ dnf remove docker \
            docker-engine-selinux \
            docker-engine 
 
-dnf -y install dnf-plugins-core 
-dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo 
-dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-systemctl enable --now docker
-sudo usermod -aG docker $USER
+sudo dnf install podman podman-compose -y
+sudo dnf install podman-docker -y
+docker run hello-world
+docker compose version
+
 
 rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h\n" | sudo tee -a /etc/yum.repos.d/vscodium.repo

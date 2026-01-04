@@ -69,7 +69,7 @@ in the ```~/.bashrc```, add the line ```export GSK_RENDERER=gl```.
 
 ### Extensions conf
 
-* Blur my shell     
+* Blur my shell   
     ![alt text](extensions/image.png)
     ![alt text](extensions/image-1.png)
     ![alt text](extensions/image-2.png)
@@ -80,6 +80,7 @@ in the ```~/.bashrc```, add the line ```export GSK_RENDERER=gl```.
     * Default settings
 * Dash to Dock      
     ![alt text](extensions/image-6.png)
+    ![alt text](extensions/image-6-bis.png)
     ![alt text](extensions/image-7.png)
     ![alt text](extensions/image-8.png)
     ![alt text](extensions/image-9.png)

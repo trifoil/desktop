@@ -74,7 +74,10 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf install codium -y
 
 sudo dnf install gns3-server gns3-gui -y
+sudo dnf install dynamips -y
 sudo dnf install @virtualization -y
+sudo dnf install xterm -y
+
 
 sudo dnf clean metadata
 sudo dnf update --refresh

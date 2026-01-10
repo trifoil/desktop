@@ -78,6 +78,7 @@ sudo dnf install dynamips -y
 sudo dnf install @virtualization -y
 sudo dnf install xterm -y
 
+sudo dnf install gazebo
 
 sudo dnf clean metadata
 sudo dnf update --refresh

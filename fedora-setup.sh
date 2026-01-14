@@ -51,7 +51,7 @@ flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install flathub org.keepassxc.KeePassXC -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
-
+flatpak install flathub io.github.herve4m.Length -y
 
 dnf remove docker \
            docker-client \
